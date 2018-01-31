@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from '../common/Button';
 
 class SelectorChoosePage extends Component {
     static propTypes = {
@@ -9,6 +10,7 @@ class SelectorChoosePage extends Component {
         return (
             <div>
                 <h2>Selector Choose Page</h2>
+                <Button/>
             </div>
         )
     }

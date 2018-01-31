@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import {Route, NavLink} from 'react-router-dom';
+import {ThemeProvider} from 'styled-components';
+import colors from './themes/colors';
 
 import SelectPage from "./routes/SelectPage";
 import SelectorChoosePage from "./routes/SelectorChoosePage";
@@ -9,7 +11,7 @@ class App extends Component {
 
     render() {
         return (
-            <div>
+            <ThemeProvider theme={colors}>
                 <h1>Hello world</h1>
                 <ul>
                     <li><NavLink to='/select-page' activeStyle = {{color: 'red'}}>select page</NavLink></li>
@@ -17,7 +19,7 @@ class App extends Component {
                 </ul>
                 <Route path = '/select-page' component = {SelectPage}/>
                 <Route path = '/selector-choose' component={SelectorChoosePage}/>
-            </div>
+            </ThemeProvider>
         )
     }
 }
