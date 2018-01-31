@@ -3,14 +3,7 @@ import styled from 'styled-components';
 import bemto from 'bemto-components';
 import theme from '../themes/theme';
 
-const StyledButton = styled(bemto('button', {
-    content: [
-        {
-            elem: 'img',
-            children: true
-        }
-    ]
-}))`
+const StyledButton = styled(bemto('button', {}))`
     display: inline-block;
     padding: 7px 15px;
     border: 1px;
@@ -89,9 +82,9 @@ class Button extends Component {
     state = {};
 
     render() {
-        const {content} = this.props;
+        const {content, ...rest} = this.props;
         return (
-            <StyledButton _color_blue>
+            <StyledButton {...rest}>
                 {content}
             </StyledButton>
         )
