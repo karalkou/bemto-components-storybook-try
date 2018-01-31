@@ -15,4 +15,5 @@ storiesOf('Button', module)
   .add('with some emoji', () => <StorybookButton onClick={action('clicked')}>😀 😎 👍 💯</StorybookButton>);
 
 storiesOf('My Button', module)
-  .add('with text', () => <Button onClick={action('clicked')} content="Click Button" _color_blue/>);
+  .add('_color_blue', () => <Button onClick={action('clicked')} content="Click Button" _color_blue/>)
+  .add('_color_blue _full-width', () => <Button onClick={action('clicked')} content="Click Button" _color_blue _full-width/>);
