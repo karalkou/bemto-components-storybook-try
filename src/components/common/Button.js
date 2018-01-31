@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
 import bemto from 'bemto-components';
+import theme from '../themes/theme';
 
 const StyledButton = styled(bemto('button', {
     content: [
@@ -58,18 +59,18 @@ const StyledButton = styled(bemto('button', {
     
     &_color {
         &_blue {
-            background-color: @blue-1;
-            border-color: @blue-1;
+            background-color: ${theme.blue_1};
+            border-color: ${theme.blue_1};
             color: white;
             &:hover {
-                border: 1px solid @blue-2;
-                background: linear-gradient(180deg, @blue-3 0%, @blue-2 100%);
+                border: 1px solid ${theme.blue_2};
+                background: linear-gradient(180deg, ${theme.blue_3} 0%, ${theme.blue_2} 100%);
             }
             &:active {
                 background-color: black;
             }
             &:disabled {
-                background-color: @gray-4;
+                background-color: ${theme.gray_4};
             }
         }
         &_gray {}
@@ -94,4 +95,4 @@ class Button extends Component {
     }
 }
 
-export default ButtonWrapper;
+export default Button;

@@ -12,13 +12,15 @@ class App extends Component {
     render() {
         return (
             <ThemeProvider theme={colors}>
-                <h1>Hello world</h1>
-                <ul>
-                    <li><NavLink to='/select-page' activeStyle = {{color: 'red'}}>select page</NavLink></li>
-                    <li><NavLink to='/selector-choose' activeStyle = {{color: 'red'}}>selector choose</NavLink></li>
-                </ul>
-                <Route path = '/select-page' component = {SelectPage}/>
-                <Route path = '/selector-choose' component={SelectorChoosePage}/>
+                <div>
+                    <h1>Hello world</h1>
+                    <ul>
+                        <li><NavLink to='/select-page' activeStyle = {{color: 'red'}}>select page</NavLink></li>
+                        <li><NavLink to='/selector-choose' activeStyle = {{color: 'red'}}>selector choose</NavLink></li>
+                    </ul>
+                    <Route path = '/select-page' component = {SelectPage}/>
+                    <Route path = '/selector-choose' component={SelectorChoosePage}/>
+                </div>
             </ThemeProvider>
         )
     }
