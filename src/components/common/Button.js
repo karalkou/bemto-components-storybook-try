@@ -89,8 +89,11 @@ class Button extends Component {
     state = {};
 
     render() {
+        const {content} = this.props;
         return (
-            <StyledButton _color_blue>Click me</StyledButton>
+            <StyledButton _color_blue>
+                {content}
+            </StyledButton>
         )
     }
 }

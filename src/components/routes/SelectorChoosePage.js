@@ -10,7 +10,7 @@ class SelectorChoosePage extends Component {
         return (
             <div>
                 <h2>Selector Choose Page</h2>
-                <Button/>
+                <Button content='Click me'/>
             </div>
         )
     }
