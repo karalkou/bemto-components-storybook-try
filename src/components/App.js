@@ -13,7 +13,7 @@ class App extends Component {
         return (
             <ThemeProvider theme={colors}>
                 <div>
-                    <h1>Hello world</h1>
+                    <h1>App component</h1>
                     <ul>
                         <li><NavLink to='/select-page' activeStyle = {{color: 'red'}}>select page</NavLink></li>
                         <li><NavLink to='/selector-choose' activeStyle = {{color: 'red'}}>selector choose</NavLink></li>
