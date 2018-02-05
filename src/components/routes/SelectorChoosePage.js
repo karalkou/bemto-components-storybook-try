@@ -14,7 +14,7 @@ class SelectorChoosePage extends Component {
                 <div/>
 
                 <MaterialButton raised color="primary">
-                    MUI Button
+                    MUI Button test
                 </MaterialButton>
             </div>
         )
