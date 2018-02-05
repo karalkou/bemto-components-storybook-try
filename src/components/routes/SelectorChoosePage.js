@@ -9,7 +9,7 @@ class SelectorChoosePage extends Component {
         return (
             <div>
                 <h2>Selector Choose Page</h2>
-                <Button content='Bemto-like btn' _color_blue/>
+                <Button content='Bemto-like btn test' _color_blue/>
 
                 <div/>
 
