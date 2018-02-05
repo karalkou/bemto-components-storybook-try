@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import Button from '../common/Button';
+import MaterialButton from 'material-ui/Button';
 
 class SelectorChoosePage extends Component {
-    static propTypes = {
-
-    };
+    static propTypes = {};
 
     render() {
         return (
             <div>
                 <h2>Selector Choose Page</h2>
-                <Button content='Click me' _color_blue/>
+                <Button content='Bemto-like btn' _color_blue/>
+
+                <div/>
+
+                <MaterialButton raised color="primary">
+                    MUI Button
+                </MaterialButton>
             </div>
         )
     }
